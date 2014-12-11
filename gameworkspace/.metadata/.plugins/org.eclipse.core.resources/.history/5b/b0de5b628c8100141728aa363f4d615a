@@ -1,0 +1,14 @@
+package com.cb;
+
+import java.util.ArrayList;
+
+public class Level {
+	public ArrayList<Tile> tiles;
+	public ArrayList<Item> items;
+	
+	public Level()
+	{
+		tiles = new ArrayList<Tile>();
+		items = new ArrayList<Item>();
+	}
+}

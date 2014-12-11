@@ -10,6 +10,9 @@ import org.lwjgl.LWJGLException;
 
 public class Game {
 	
+	// Turn off for public release
+	public final boolean DEBUG_MODE = true;
+	
 	public Game()
 	{
 		

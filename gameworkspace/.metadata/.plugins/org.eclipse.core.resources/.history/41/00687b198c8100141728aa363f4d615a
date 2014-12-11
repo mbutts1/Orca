@@ -1,0 +1,8 @@
+package com.cb;
+
+public class Tile {
+
+	public float x,y;
+	public int tilevalue;
+	
+}

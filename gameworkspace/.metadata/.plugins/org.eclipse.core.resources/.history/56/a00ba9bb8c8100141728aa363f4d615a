@@ -1,0 +1,13 @@
+package com.cb;
+
+import java.util.ArrayList;
+
+public class Level {
+	public ArrayList<GameObject> levelObjects;
+	
+	public Level()
+	{
+		tiles = new ArrayList<Tile>();
+		items = new ArrayList<Item>();
+	}
+}
