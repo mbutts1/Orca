@@ -1,0 +1,25 @@
+package com.cb;
+
+import org.lwjgl.input.Keyboard;
+
+public class Game {
+	
+	private Keyboard gameKeyboard;
+	
+	public Game()
+	{
+		gameKeyboard = new Keyboard();
+	}
+	
+	public void run()
+	{
+		boolean running = true;
+		while(running)
+		{
+			if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE))
+			{
+				running = false;
+			}
+		}	
+	}
+}

@@ -1,0 +1,16 @@
+package com.cb;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
+
+public class Game {
+	
+	public void run()
+	{
+		while(true)
+		{
+			
+		}
+	}
+	
+}

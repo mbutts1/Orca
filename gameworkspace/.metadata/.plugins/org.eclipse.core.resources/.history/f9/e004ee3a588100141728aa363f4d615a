@@ -1,0 +1,15 @@
+package com.cb;
+
+import org.lwjgl.input;
+
+public class Game {
+	
+	public void run()
+	{
+		while(true)
+		{
+			
+		}
+	}
+	
+}

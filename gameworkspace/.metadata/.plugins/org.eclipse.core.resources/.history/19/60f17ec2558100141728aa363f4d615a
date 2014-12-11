@@ -1,0 +1,15 @@
+package com.cb;
+
+import org.lwjgl.opengl.*;
+
+public class Game {
+	
+	public void run()
+	{
+		while(true)
+		{
+			
+		}
+	}
+	
+}
