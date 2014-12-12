@@ -1,5 +1,0 @@
-package com.cb;
-
-public class Level {
-	private HashMap tilemap;
-}

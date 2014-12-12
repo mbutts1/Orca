@@ -1,7 +1,0 @@
-package com.cb;
-
-public interface GameObject {
-	float x,y;
-    boolean collisionEnabled;
-	boolean physicsEnabled;
-}

@@ -1,5 +1,0 @@
-package com.cb;
-
-public class Tile extends GameObject {
-	
-}

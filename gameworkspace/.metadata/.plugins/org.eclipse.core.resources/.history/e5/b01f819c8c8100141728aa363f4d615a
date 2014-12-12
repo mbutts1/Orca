@@ -1,7 +1,0 @@
-package com.cb;
-
-public class GameObject {
-	public float x,y;
-	public int sprite;
-	public boolean collisionEnabled;
-}
