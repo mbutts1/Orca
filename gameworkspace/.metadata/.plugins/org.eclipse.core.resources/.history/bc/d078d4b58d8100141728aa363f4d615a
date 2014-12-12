@@ -1,0 +1,9 @@
+package com.cb;
+
+public interface GameObject {
+	public float x,y;
+	public boolean collisionEnabled;
+	public boolean physicsEnabled;
+	
+	public void draw()
+}
