@@ -1,0 +1,90 @@
+package com.cb;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.IntBuffer;
+import java.util.Dictionary;
+import java.util.Vector;
+
+import org.lwjgl.BufferUtils;
+import org.lwjgl.opengl.Display;
+import org.lwjgl.opengl.GL11;
+import org.newdawn.slick.opengl.Texture;
+import org.newdawn.slick.opengl.TextureImpl;
+import org.newdawn.slick.opengl.TextureLoader;
+import org.newdawn.slick.util.ResourceLoader;
+
+public class TextureManager {
+	Game game;
+	Texture texture;
+	int currentId;
+	Dictionary <Integer, Texture>textureSet;
+	int id;
+	Vector<Texture> texs;
+	public TextureManager(Game g){
+		game= g;
+		currentId=1;
+		texs= new Vector<Texture>();
+	
+	}
+	
+	public void addTexture(String path){
+		try {
+			texture = TextureLoader.getTexture("PNG", ResourceLoader.getResourceAsStream(path));
+			
+			//texture = TextureLoader.getTexture("PNG", ResourceLoader.getResourceAsStream("/githubstuff/Orca/gameworkspace/Orca/assets/testImage.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.err.println("err: IOException");
+			//e.printStackTrace();
+		}
+		//id= 0;
+		//if(texture!=null){
+			texs.add(texture);
+			//id=texture.getTextureID(); 
+			//id = currentId;
+			//int texID = GL11.glGenTextures();
+			//IntBuffer tmp=BufferUtils.createIntBuffer(1);
+			//System.out.println("TextureID: "+id);
+			//GL11.glGenTextures(tmp);
+			//GL11.glGenTextures();
+			
+			//tmp.rewind();
+			//GL11.glBindTexture(GL11.GL_TEXTURE_2D,id );
+			//currentId++;
+		
+		//}
+		
+		
+		
+		
+	}
+	
+//	public void Draw(int sx, int sy, int ex, int ey)	
+	public void Draw(){
+	
+		
+		//GL11.glBegin(GL11.GL_QUADS);
+		for(int i = 0;i<texs.size();i++){
+			
+			texs.elementAt(i).bind();
+			GL11.glBegin(GL11.GL_QUADS);
+			GL11.glTexCoord2f(0,0);
+			GL11.glVertex2i(100+(100*i), 100+(100*i));
+			GL11.glTexCoord2f(1,0);
+			GL11.glVertex2i(200+(100*i), 100+(100*i));
+			GL11.glTexCoord2f(1,1);
+			GL11.glVertex2i(200+(100*i), 200+(100*i));
+			GL11.glTexCoord2f(0,1);
+			GL11.glVertex2i(100+(100*i), 200+(100*i));
+			//TextureImpl.unbind();
+			GL11.glEnd();	
+		}
+	
+		
+		
+	}
+	
+}

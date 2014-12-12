@@ -14,4 +14,10 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>ASSETS</name>
+			<value>file:/gitHubStuff/Orca/gameworkspace/Orca/assets</value>
+		</variable>
+	</variableList>
 </projectDescription>
